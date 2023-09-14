@@ -1,0 +1,7 @@
+from ubuntu:latest
+run mkdir /app
+workdir /app
+run apt-geet update
+run app-get install python -y
+run echo "print('hello, world:D')" > hello.py
+cmd python hello.py
